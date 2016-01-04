@@ -94,5 +94,9 @@ BOARD_RIL_CLASS := ../../../device/samsung/golden/ril/
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/golden/include
 TARGET_RECOVERY_FSTAB := device/samsung/golden/ramdisk/fstab.samsunggolden
 
+# Offline charging
+BOARD_LPM_BOOT_ARGUMENT_NAME := lpm_boot
+BOARD_LPM_BOOT_ARGUMENT_VALUE := 1
+
 # GPS
 TARGET_ENABLE_NON_PIE_SUPPORT := true
