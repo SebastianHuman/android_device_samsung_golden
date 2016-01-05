@@ -179,4 +179,7 @@
 
     <!-- Is the device LTE capable -->
     <bool name="config_lte_capable">false</bool>
+
+    <!-- Indicate whether the SD card is accessible without removing the battery. -->
+    <bool name="config_batterySdCardAccessibility">true</bool>
 </resources>
