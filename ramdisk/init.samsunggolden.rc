@@ -26,7 +26,7 @@ on init
     mkdir /storage/emulated 0555 root root
     mkdir /storage/sdcard1 0775 system system
     mkdir /storage/usbdisk0 0775 system system
-    mkdir /mnt/media_rw/sdcard1 0777 system system
+    mkdir /mnt/media_rw/sdcard1 0775 system system
     mkdir /mnt/media_rw/usbdisk0 0775 system system
 
     export EXTERNAL_STORAGE /storage/emulated/legacy
@@ -367,9 +367,6 @@ on boot
     # UART device
     chown bluetooth bluetooth /dev/ttyAMA0
     chmod 0660 /dev/ttyAMA0
-
-    # permissions for FMRadio of Broadcom
-    chmod 0777 /system/bin/btld
 
     # power up/down interface
     chmod 0660 /sys/class/rfkill/rfkill0/state
