@@ -176,4 +176,7 @@
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
     <integer name="config_deviceHardwareWakeKeys">65</integer>
+
+    <!-- Is the device LTE capable -->
+    <bool name="config_lte_capable">false</bool>
 </resources>
