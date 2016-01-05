@@ -27,4 +27,8 @@ ste.cam.front.orientation=270
 ste.cam.back.orientation=90
 ste.cam.ext.cfg.path.secondary=/system/usr/share/camera/config_file/aptina_mt9v113.dat
 ste.omx.ctx=0
-# Camera green screen fix (testing)
+# ART optimizations
+dalvik.vm.dex2oat-filter=balanced
+dalvik.vm.dex2oat-flags=--no-watch-dog
+dalvik.vm.image-dex2oat-filter=speed
+persist.sys.dalvik.multithread=true
